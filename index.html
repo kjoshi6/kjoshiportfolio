@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisha Joshi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f4f4f4, #d8e3e7);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #61dafb;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .resume, .substack, .gallery {
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #61dafb;
+            color: #282c34;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #282c34;
+            color: #61dafb;
+        }
+
+        .photo-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#resume">Resume</a>
+            <a href="#substack">Substack</a>
+            <a href="#gallery">Photo Gallery</a>
+        </nav>
+    </header>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <p>A summary of my professional journey.</p>
+        <a href="resume.pdf" class="btn" target="_blank">Download My Resume</a>
+    </section>
+
+    <section id="substack" class="substack">
+        <h2>Substack</h2>
+        <p>Check out my latest writing on Substack!</p>
+        <a href="https://yoursubstack.substack.com" class="btn" target="_blank">Visit My Substack</a>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Photo Gallery</h2>
+        <p>Here are some snapshots of my life and work.</p>
+        <div class="photo-gallery">
+            <img src="photo1.jpg" alt="Sample Photo 1">
+            <img src="photo2.jpg" alt="Sample Photo 2">
+            <img src="photo3.jpg" alt="Sample Photo 3">
+            <img src="photo4.jpg" alt="Sample Photo 4">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Krisha Joshi Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
