@@ -1,134 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krisha Joshi</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #f4f4f4, #d8e3e7);
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #282c34;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #61dafb;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-            margin: 20px auto;
-        }
-
-        .resume, .substack, .gallery {
-            margin-top: 40px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            background-color: #61dafb;
-            color: #282c34;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #282c34;
-            color: #61dafb;
-        }
-
-        .photo-gallery img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            margin: 10px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .photo-gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        footer {
-            background-color: #282c34;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krisha Joshi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#resume">Resume</a>
-            <a href="#substack">Substack</a>
-            <a href="#gallery">Photo Gallery</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Krisha Joshi</h1>
+    <p class="subtitle">Creative Producer • Researcher • Writer</p>
+  </header>
 
-    <section id="resume" class="resume">
-        <h2>Resume</h2>
-        <p>A summary of my professional journey.</p>
-        <a href="resume.pdf" class="btn" target="_blank">Download My Resume</a>
-    </section>
-
-    <section id="substack" class="substack">
-        <h2>Substack</h2>
-        <p>Check out my latest writing on Substack!</p>
-        <a href="https://yoursubstack.substack.com" class="btn" target="_blank">Visit My Substack</a>
-    </section>
-
-    <section id="gallery" class="gallery">
-        <h2>Photo Gallery</h2>
-        <p>Here are some snapshots of my life and work.</p>
-        <div class="photo-gallery">
-            <img src="photo1.jpg" alt="Sample Photo 1">
-            <img src="photo2.jpg" alt="Sample Photo 2">
-            <img src="photo3.jpg" alt="Sample Photo 3">
-            <img src="photo4.jpg" alt="Sample Photo 4">
+  <section id="about">
+    <div class="about-content">
+      <img src="headshot.jpg" alt="Krisha Joshi Headshot" class="headshot">
+      <div class="about-text">
+        <p>I'm a creative producer and project manager passionate about bringing editorial and digital experiences to life. I bridge creativity and structure — from coordinating photo shoots and managing freelancer teams to crafting testing protocols and brand stories for media outlets like <strong>PEOPLE</strong>, <strong>Health</strong>, and <strong>Shape</strong>.</p>
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>Project Management 🗂️</li>
+            <li>Editorial Production 📰</li>
+            <li>Creative Strategy 💡</li>
+            <li>HTML / CSS / JS 💻</li>
+            <li>Research & Methodology 📚</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; Krisha Joshi Portfolio. All rights reserved.</p>
-    </footer>
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="project-grid">
+      <a href="#" class="project-card">
+        <h3>PEOPLE Inc. Testing Methodologies</h3>
+        <p>Developed structured testing protocols and managed lab operations for cross-brand product reviews across PEOPLE, Health, and Shape.</p>
+      </a>
+      <a href="https://kjoshi6.github.io" class="project-card" target="_blank">
+        <h3>Kiki’s World</h3>
+        <p>An interactive mystical experience blending astrology, code, and design. Built from scratch with HTML, CSS, and JavaScript.</p>
+      </a>
+      <a href="#" class="project-card">
+        <h3>Substack: Essays & Creative Writing</h3>
+        <p>Exploring modern relationships, identity, and ambition through reflective essays and cultural analysis.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>View or download my resume below.</p>
+    <a href="KrishaJoshi_Resume.pdf" class="resume-btn" target="_blank">📄 View Resume</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Krisha Joshi </p>
+  </footer>
+
+  <!-- Custom Cursor -->
+  <script>
+    document.body.style.cursor = "url('https://i.pinimg.com/1200x/f1/36/70/f1367004a311d535dad143721a1c2969.jpg'), auto";
+  </script>
 </body>
 </html>
