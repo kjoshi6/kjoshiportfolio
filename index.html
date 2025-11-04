@@ -1,68 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krisha Joshi | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krisha Joshi — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Custom cursor -->
+  <style>
+    /* quick fallback if CSS file not loaded yet */
+    body { cursor: url('cursor.png'), auto; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Krisha Joshi</h1>
-    <p class="subtitle">Creative Producer • Researcher • Writer</p>
-  </header>
 
-  <section id="about">
-    <div class="about-content">
-      <img src="kjheadshotfr.png" alt="Krisha Joshi Headshot" class="headshot">
-      <div class="about-text">
-        <p>I'm a creative producer and project manager passionate about bringing editorial and digital experiences to life. I bridge creativity and structure — from coordinating photo shoots and managing freelancer teams to crafting testing protocols and brand stories for media outlets like <strong>PEOPLE</strong>, <strong>Health</strong>, and <strong>Shape</strong>.</p>
-        <div class="skills">
-          <h3>Skills</h3>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader">
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <!-- Page -->
+  <div class="page">
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <h1 class="masthead-name">KRISHA JOSHI</h1>
+      <div class="masthead-sub">Creative Producer &amp; Production Manager — Editorial · Interactive · Motion</div>
+    </header>
+
+    <!-- Top feature: headshot left, intro right -->
+    <section class="top-feature">
+      <div class="left-col">
+        <div class="headshot-wrap">
+          <img src="headshot.jpg" alt="Krisha Joshi headshot" class="headshot" />
+          <figure class="caption">Krisha Joshi — Production Manager</figure>
+        </div>
+      </div>
+
+      <aside class="right-col">
+        <div class="intro">
+          <h2 class="intro-title">Hello — I make ideas feel inevitable.</h2>
+          <p class="intro-blurb">I bring structure to creative chaos: building testing protocols, producing shoots, and managing cross-functional teams that deliver editorial and digital work people trust. I love shaping narratives that are visually arresting and editorially rigorous.</p>
+
+          <div class="skill-blocks">
+            <div class="skill-col">
+              <h4>Hard Skills</h4>
+              <ul>
+                <li>Production Management</li>
+                <li>Airtable / Workflow Automation</li>
+                <li>Shot Lists & On-Set Direction</li>
+                <li>HTML · CSS · JS</li>
+              </ul>
+            </div>
+            <div class="skill-col">
+              <h4>Soft Skills</h4>
+              <ul>
+                <li>Team Leadership</li>
+                <li>Calm Under Pressure</li>
+                <li>Clear Communication</li>
+                <li>Creative Vision</li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="cta resume-link" href="KrishaJoshi_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Mosaic Projects -->
+    <main class="mosaic">
+      <h3 class="section-label">Selected Projects</h3>
+
+      <div class="grid">
+        <button class="card card-large" data-project="people">
+          <div class="card-color" style="background: linear-gradient(135deg,#fa9f6a22,#fa9f6a44)"></div>
+          <div class="card-body">
+            <h4>People Inc. — Testing Protocols</h4>
+            <p>Built scalable testing methodologies and shot lists used across People, Health.com, Shape, and Parents.</p>
+          </div>
+        </button>
+
+        <button class="card card-small" data-project="kiki">
+          <div class="card-color" style="background: linear-gradient(135deg,#728bc022,#728bc044)"></div>
+          <div class="card-body">
+            <h4>Kiki’s World</h4>
+            <p>Interactive astrology site — HTML/CSS/JS; shimmering visuals & tarot mechanic.</p>
+          </div>
+        </button>
+
+        <button class="card card-medium" data-project="substack">
+          <div class="card-color" style="background: linear-gradient(135deg,#c3361822,#c3361844)"></div>
+          <div class="card-body">
+            <h4>Substack — Essays</h4>
+            <p>Essays on creativity, ambition, and culture; storytelling-led personal writing.</p>
+          </div>
+        </button>
+
+        <button class="card card-small" data-project="video">
+          <div class="card-color" style="background: linear-gradient(135deg,#41634822,#41634844)"></div>
+          <div class="card-body">
+            <h4>Video & Shoots</h4>
+            <p>Produced lab and in-field shoots; coordinated crews, budgets, and deliverables.</p>
+          </div>
+        </button>
+
+        <button class="card card-medium" data-project="research">
+          <div class="card-color" style="background: linear-gradient(135deg,#62411e22,#62411e44)"></div>
+          <div class="card-body">
+            <h4>Research & Strategy</h4>
+            <p>Methodology design, tester recruitment, and data-driven editorial decisions.</p>
+          </div>
+        </button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <small>© 2025 Krisha Joshi • Built with curiosity. • Williamsburg, NYC</small>
+    </footer>
+  </div>
+
+  <!-- Project overlays (same-page panels) -->
+  <div class="overlay" id="project-people" aria-hidden="true">
+    <div class="overlay-inner">
+      <a class="back" data-close>&larr; Back to Home</a>
+      <h2>People Inc. — Testing Protocols</h2>
+      <p class="lead">A behind-the-scenes look at the testing frameworks I built to power product reviews across multiple major brands.</p>
+      <div class="overlay-grid">
+        <div class="overlay-card">
+          <h4>What I did</h4>
           <ul>
-            <li>Project Management 🗂️</li>
-            <li>Editorial Production 📰</li>
-            <li>Creative Strategy 💡</li>
-            <li>HTML / CSS / JS 💻</li>
-            <li>Research & Methodology 📚</li>
+            <li>Designed testing protocols & shot lists</li>
+            <li>Managed 300+ testers annually</li>
+            <li>Onboarded freelancers and managed budgets</li>
+          </ul>
+        </div>
+        <div class="overlay-card">
+          <h4>Featured Files</h4>
+          <ul>
+            <li><a href="people-methodology.pdf" target="_blank">Methodology (PDF)</a></li>
+            <li><a href="people-shotlist.pdf" target="_blank">Sample Shot List (PDF)</a></li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="projects">
-    <h2>Selected Projects</h2>
-    <div class="project-grid">
-      <a href="#" class="project-card">
-        <h3>PEOPLE Inc. Testing Methodologies</h3>
-        <p>Developed structured testing protocols and managed lab operations for cross-brand product reviews across PEOPLE, Health, and Shape.</p>
-      </a>
-      <a href="https://kjoshi6.github.io" class="project-card" target="_blank">
-        <h3>Kiki’s World</h3>
-        <p>An interactive mystical experience blending astrology, code, and design. Built from scratch with HTML, CSS, and JavaScript.</p>
-      </a>
-      <a href="#" class="project-card">
-        <h3>Substack: Essays & Creative Writing</h3>
-        <p>Exploring modern relationships, identity, and ambition through reflective essays and cultural analysis.</p>
-      </a>
+  <div class="overlay" id="project-kiki" aria-hidden="true">
+    <div class="overlay-inner">
+      <a class="back" data-close>&larr; Back to Home</a>
+      <h2>Kiki’s World — Interactive Site</h2>
+      <p class="lead">Live demo and breakdown of the Kiki's World site (GitHub Pages).</p>
+      <div class="overlay-grid">
+        <div class="overlay-card"><p><a href="https://kjoshi6.github.io" target="_blank">Open Kiki’s World (new tab)</a></p></div>
+        <div class="overlay-card"><p>Built with HTML/CSS/JS; includes tarot generator and immersive UI.</p></div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>View or download my resume below.</p>
-    <a href="file:///C:/Users/krish/Downloads/_KrishaJoshi-Resume2025-ProductionManager.pdf" class="resume-btn" target="_blank">📄 View Resume</a>
-  </section>
+  <div class="overlay" id="project-substack" aria-hidden="true">
+    <div class="overlay-inner">
+      <a class="back" data-close>&larr; Back to Home</a>
+      <h2>Substack — Essays & Writing</h2>
+      <p class="lead">Selected pieces and editorial strategy for building readership and engagement.</p>
+      <div class="overlay-grid">
+        <div class="overlay-card"><a href="https://krishajoshi.substack.com" target="_blank">Open Substack</a></div>
+        <div class="overlay-card"><p>Samples and newsletter growth strategy available on request.</p></div>
+      </div>
+    </div>
+  </div>
 
-  <footer>
-    <p>© 2025 Krisha Joshi </p>
-  </footer>
+  <div class="overlay" id="project-video" aria-hidden="true">
+    <div class="overlay-inner">
+      <a class="back" data-close>&larr; Back to Home</a>
+      <h2>Video & Shoots</h2>
+      <p class="lead">Selected behind-the-scenes and production notes from lab and in-field shoots.</p>
+      <div class="overlay-grid">
+        <div class="overlay-card"><a href="video-bts.pdf" target="_blank">BTS Notes (PDF)</a></div>
+        <div class="overlay-card"><p>Coordination, vendor management, post hand-off.</p></div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Custom Cursor -->
+  <div class="overlay" id="project-research" aria-hidden="true">
+    <div class="overlay-inner">
+      <a class="back" data-close>&larr; Back to Home</a>
+      <h2>Research & Strategy</h2>
+      <p class="lead">Methodology case studies, recruiter workflows, and Airtable automations.</p>
+      <div class="overlay-grid">
+        <div class="overlay-card"><a href="airtable-sample.png" target="_blank">Airtable Screenshot</a></div>
+        <div class="overlay-card"><p>Forms, automations, and efficiency wins.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactivity script -->
   <script>
-    document.body.style.cursor = "url('https://i.pinimg.com/1200x/f1/36/70/f1367004a311d535dad143721a1c2969.jpg'), auto";
+    // Cursor fallback if CSS didn't load
+    document.body.style.cursor = "url('cursor.png'), auto";
+
+    // Preloader hide
+    window.addEventListener('load', function() {
+      const p = document.getElementById('preloader');
+      p.classList.add('hide');
+      setTimeout(()=> p.remove(), 600);
+    });
+
+    // Open overlays
+    document.querySelectorAll('.card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const slug = btn.dataset.project;
+        const overlay = document.getElementById('project-' + slug);
+        if (!overlay) return;
+        overlay.setAttribute('aria-hidden', 'false');
+        overlay.classList.add('open');
+        document.documentElement.classList.add('no-scroll');
+      });
+    });
+
+    // Close overlays
+    document.querySelectorAll('[data-close]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const overlay = link.closest('.overlay');
+        if (overlay) {
+          overlay.classList.remove('open');
+          overlay.setAttribute('aria-hidden', 'true');
+          document.documentElement.classList.remove('no-scroll');
+        } else {
+          // close any open overlays
+          document.querySelectorAll('.overlay.open').forEach(o => {
+            o.classList.remove('open');
+            o.setAttribute('aria-hidden', 'true');
+          });
+          document.documentElement.classList.remove('no-scroll');
+        }
+      });
+    });
+
+    // close overlay when clicking outside inner
+    document.querySelectorAll('.overlay').forEach(o => {
+      o.addEventListener('click', (e) => {
+        if (e.target === o) {
+          o.classList.remove('open');
+          o.setAttribute('aria-hidden', 'true');
+          document.documentElement.classList.remove('no-scroll');
+        }
+      });
+    });
   </script>
 </body>
 </html>
