@@ -8,7 +8,7 @@
 .typewriter {
   font-family: serifNewsreader;
   font-size: 1.5rem;
-  color: #f7f5f2; /* accent color */
+  color: #37220b; /* accent color */
 	font-weight: 300;
 	font-style: normal;
 }
@@ -37,7 +37,7 @@
 /* Cursor blink */
 @keyframes blink {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #fa9f6a; }
+  50% { border-color: #f5ede9; }
 }
 
 /* Fade in sentence at start of typing */
